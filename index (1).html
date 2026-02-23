@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future of AI | Student Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #00f2ff;
+            --secondary: #7000ff;
+            --bg-dark: #020617;
+            --card-bg: #ffffff;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; color: #1e293b; line-height: 1.6; }
+
+        /* --- HERO HEADER --- */
+        header {
+            height: 60vh;
+            background: linear-gradient(rgba(2, 6, 23, 0.6), rgba(2, 6, 23, 0.8)), 
+                        url('https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 { font-family: 'Orbitron', sans-serif; font-size: 3rem; margin-bottom: 10px; text-shadow: 0 0 20px var(--primary); }
+        header p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; }
+
+        /* --- CONTAINER --- */
+        .container { max-width: 900px; margin: -60px auto 50px; padding: 0 20px; }
+
+        /* --- CARD STYLE --- */
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            border-top: 5px solid var(--primary);
+        }
+
+        h2 { font-family: 'Orbitron', sans-serif; font-size: 1.6rem; margin-bottom: 20px; color: var(--secondary); display: flex; align-items: center; gap: 10px; }
+
+        /* --- LISTS --- */
+        ul { list-style: none; }
+        ul li { padding: 12px 0; border-bottom: 1px solid #f1f5f9; position: relative; padding-left: 25px; }
+        ul li::before { content: '✦'; position: absolute; left: 0; color: var(--primary); font-weight: bold; }
+
+        /* --- GRID FOR IMAGES --- */
+        .img-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .img-grid img { width: 100%; border-radius: 12px; height: 150px; object-fit: cover; }
+
+        /* --- FOOTER --- */
+        footer { text-align: center; padding: 40px; color: #94a3b8; font-size: 0.8rem; border-top: 1px solid #e2e8f0; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Future of AI</h1>
+        <p>The world powered by intelligent machines</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+            <h2>What is AI?</h2>
+            <p>Artificial Intelligence (AI) refers to machines that can learn, think, and make decisions similar to humans. AI systems can analyze data, recognize patterns, and solve problems efficiently.</p>
+        </section>
+
+        <section class="card">
+            <h2>Future Applications</h2>
+            <div class="img-grid">
+                <img src="https://images.pexels.com/photos/7579831/pexels-photo-7579831.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Health">
+                <img src="https://images.pexels.com/photos/5212324/pexels-photo-5212324.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Edu">
+            </div>
+            <ul>
+                <li>AI in Healthcare – Smart diagnosis & robotic surgery</li>
+                <li>AI in Education – Personalized learning systems</li>
+                <li>AI in Business – Automation & data-driven decisions</li>
+                <li>AI in Daily Life – Smart assistants & smart homes</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Benefits of AI</h2>
+            <ul>
+                <li>Reduces human effort and saves time</li>
+                <li>Improves accuracy and reduces errors</li>
+                <li>Works 24/7 without getting tired</li>
+                <li>Handles complex tasks efficiently</li>
+            </ul>
+        </section>
+
+        <section class="card">
+            <h2>Risks & Challenges</h2>
+            <p>Har technology ke saath kuch risks aate hain, aur AI bhi alag nahi hai:</p>
+            <ul style="margin-top: 15px;">
+                <li>Job displacement (Naukriyon ka khatra)</li>
+                <li>Privacy concerns (Data ki suraksha)</li>
+                <li>Bias in algorithms</li>
+            </ul>
+        </section>
+
+        <section class="card" style="background: linear-gradient(135deg, #7000ff, #00f2ff); color: white;">
+            <h2 style="color: white;">Conclusion</h2>
+            <p>The future will not be AI vs Humans, but AI with Humans. Together, they can create smarter and more efficient solutions.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Future of AI | Student Project | Made for GitHub</p>
+    </footer>
+
+</body>
+</html>
